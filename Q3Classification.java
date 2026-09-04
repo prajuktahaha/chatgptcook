@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Q3Countpositivesnegativesandzeros {
+public class Q3Classification {
     public static void main(String[]args){
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the value of n : ");
