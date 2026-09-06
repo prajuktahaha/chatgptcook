@@ -1,6 +1,6 @@
 import java.util.Scanner;
 public class Q8SumofNegativeNumbers {
-    public static void main(String [] arms){
+    public static void main(String [] args){
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the input value : ");
         int n = sc.nextInt();
