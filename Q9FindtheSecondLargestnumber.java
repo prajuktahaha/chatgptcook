@@ -13,7 +13,7 @@ public class Q9FindtheSecondLargestnumber {
                 secondLargest = largest ;
                 largest = numbers;
             }
-            else if(numbers > secondLargest & numbers != largest){
+            else if(numbers > secondLargest && numbers != largest){
                 secondLargest = numbers;
             }
         }
