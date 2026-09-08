@@ -5,7 +5,7 @@ public class Q10Reverseanumber {
         System.out.println("Enter the number : ");
         int n = sc.nextInt();
         int rev = 0;
-        for(int i = 0 ; i < n ; i++){
+        while(n>0){
             int digit = n % 10 ;
             n = n / 10;
             rev = rev*10+digit;
