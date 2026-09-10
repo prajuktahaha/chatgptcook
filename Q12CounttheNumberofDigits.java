@@ -6,7 +6,6 @@ public class Q12CounttheNumberofDigits{
         int n = sc.nextInt();
         int count = 0;
         while(n > 0){
-            int digits = n % 10;
             n = n / 10;
             count++;
         }
