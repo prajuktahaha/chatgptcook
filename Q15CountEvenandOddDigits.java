@@ -9,7 +9,7 @@ public class Q15CountEvenandOddDigits {
         while(n>0){
             int digit = n % 10;
             n = n / 10;
-            if(n % 2 == 0){
+            if(digit % 2 == 0){
                 even++;
             }
             else{
