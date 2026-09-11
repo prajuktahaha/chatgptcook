@@ -4,7 +4,6 @@ public class Q21SumofOddDigits {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the value of n : ");
         int n = sc.nextInt();
-        int odd = 0;
         int sum = 0;
         while(n>0){
             int digit = n % 10;
