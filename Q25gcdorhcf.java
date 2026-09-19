@@ -1,3 +1,4 @@
+//euclidean algorithm
 import java.util.Scanner;
 public class Q25gcdorhcf {
     public static void main(String [] args){
@@ -6,14 +7,11 @@ public class Q25gcdorhcf {
         int a = sc.nextInt();
         System.out.println("Enter the 2nd number : ");
         int b = sc.nextInt();
-        int high = 1;
-        for(int i = 1 ; i <= Math.min(a , b) ; i++){ 
-            if(a % i == 0 && b % i == 0){
-                if(i > high){
-                    high = i;
-                }
-            }
+        while(b > 0){
+            int t = a % b;
+            a = b;
+            b = t;
         }
-        System.out.println("The GCD of" + " " + a + " ; " + b + "is " + " " + high);
+        System.out.println("The GCD is  : " + a);
     }
 }
