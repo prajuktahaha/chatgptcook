@@ -6,15 +6,14 @@ public class Q26LCM {
         int a  = sc.nextInt();
         System.out.println("Enter the value of b : ");
         int b = sc.nextInt();
-        int high = 1;
-        for(int i = 1 ; i <= Math.min(a , b) ; i++){ 
-         while(a != 0){
+        int x = a;
+        int y = b;
+        while(a > 0){
             int t = b % a;
             b = a;
             a = t;
-          }
         }
-        int lcm = (a*b / high);
+        int lcm = ( x * y / b);
         System.out.println("The LCM is " + " " + lcm);
     }
 }
