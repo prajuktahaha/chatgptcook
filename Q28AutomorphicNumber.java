@@ -16,6 +16,7 @@ public class Q28AutomorphicNumber {
             divisor = divisor * 10;
         }
         int lastPart = product % divisor;
+        
         if (lastPart == n){
             System.out.println(n + " is a Automorphic number");
         }
