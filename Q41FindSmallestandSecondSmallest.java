@@ -10,11 +10,11 @@ public class Q41FindSmallestandSecondSmallest {
         System.out.println("Enter the elements : ");
         for(int i = 0 ; i < arr.length ; i++){
             arr[i] = sc.nextInt();
-            if(arr[i] > smallest){
+            if(arr[i] < smallest){
                 secondSmallest = smallest;
                 smallest = arr[i];
             }
-            else if(arr[i] < secondSmallest && arr[i] > smallest){
+            else if(arr[i] < secondSmallest){
                 secondSmallest = arr[i];
             }
         }
