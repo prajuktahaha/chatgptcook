@@ -14,7 +14,7 @@ public class Q41FindSmallestandSecondSmallest {
                 secondSmallest = smallest;
                 smallest = arr[i];
             }
-            else if(arr[i] < secondSmallest){
+            else if(arr[i] < secondSmallest && arr[i] != smallest){
                 secondSmallest = arr[i];
             }
         }
