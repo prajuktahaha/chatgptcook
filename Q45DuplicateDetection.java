@@ -5,7 +5,7 @@ public class Q45DuplicateDetection {
         System.out.println("Enter the n value : ");
         int n = sc.nextInt();
         int [] arr = new int[n];
-        boolean duplication = false;
+        int duplication = 0;
         System.out.println("Enter the elements : ");
         for(int i = 0 ; i < arr.length ; i++){
             arr[i] = sc.nextInt();
@@ -13,11 +13,11 @@ public class Q45DuplicateDetection {
         for(int i = 0 ; i < arr.length ; i++){
             for(int j = i + 1 ; j < arr.length ; j++){
                if(arr[i] == arr[j]){
-                    duplication = true;
+                    duplication++;
                 }
             }
         }
-        if(duplication){
+        if(duplication > 0){
             System.out.println("Duplication found");
         }
         else{
