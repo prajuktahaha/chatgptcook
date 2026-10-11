@@ -16,7 +16,6 @@ public class Q49MoveNegativenumtoLeft {
                 arr[i] = temp;
                 position++;
             }
-
         }
         System.out.println(Arrays.toString(arr));
     }
